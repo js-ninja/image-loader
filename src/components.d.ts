@@ -27,33 +27,37 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface MyComponent {
-      'first': string;
-      'last': string;
+    interface LazyLoad {
+      'alt': string;
+      'bg': boolean;
+      'src': string;
+      'styling': string;
     }
   }
 
-  interface HTMLMyComponentElement extends StencilComponents.MyComponent, HTMLStencilElement {}
+  interface HTMLLazyLoadElement extends StencilComponents.LazyLoad, HTMLStencilElement {}
 
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLLazyLoadElement: {
+    prototype: HTMLLazyLoadElement;
+    new (): HTMLLazyLoadElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'lazy-load': HTMLLazyLoadElement;
   }
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'lazy-load': HTMLLazyLoadElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
+      'lazy-load': JSXElements.LazyLoadAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
+    export interface LazyLoadAttributes extends HTMLAttributes {
+      'alt'?: string;
+      'bg'?: boolean;
+      'src'?: string;
+      'styling'?: string;
     }
   }
 }
