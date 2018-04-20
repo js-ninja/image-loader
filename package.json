@@ -1,6 +1,6 @@
 {
   "name": "@veerajshenoy/imageloader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Image Loader Component - Lazy loading and Progressive loading.",
   "main": "dist/imageloader.js",
   "types": "dist/types/components.d.ts",
