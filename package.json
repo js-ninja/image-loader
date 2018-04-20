@@ -1,6 +1,6 @@
 {
   "name": "@veerajshenoy/imageloader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Image Loader Component - Lazy loading and Progressive loading.",
   "main": "dist/imageloader.js",
   "types": "dist/types/components.d.ts",
@@ -27,14 +27,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "git+https://github.com/js-ninja/image-loader.git"
   },
   "author": "Ionic Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/js-ninja/image-loader"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://github.com/js-ninja/image-loader",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
