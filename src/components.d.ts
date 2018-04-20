@@ -30,6 +30,7 @@ declare global {
     interface LazyLoad {
       'alt': string;
       'bg': boolean;
+      'initcolor': string;
       'src': string;
       'styling': string;
     }
@@ -56,6 +57,7 @@ declare global {
     export interface LazyLoadAttributes extends HTMLAttributes {
       'alt'?: string;
       'bg'?: boolean;
+      'initcolor'?: string;
       'src'?: string;
       'styling'?: string;
     }

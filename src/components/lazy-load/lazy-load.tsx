@@ -10,33 +10,27 @@ export class MyComponent {
   @Prop() src: string;
   @Prop() styling: string;
   @Prop() bg: boolean = false;
+  @Prop() initcolor: string = 'transparent';
   @Prop() alt: string = "Lazy Image";
-  @State() srcClass: string = "hide";
   @State() innerHTML: string = "";
 
 
   componentWillLoad() {
+    this.innerHTML = "<div style='background-color:" + this.initcolor + "; " + this.styling + "'></div>";
   }
 
   render() {
-    if (!this.bg) {
-      return (
+    return (
+      <div class="full">
         <div class="full" innerHTML={this.innerHTML}>
-          <img class="hide" src={this.src} onLoad={() => this.imgloaded()} />
         </div>
-      );
-    } else {
-      return (
-        <div class={this.srcClass} innerHTML={this.innerHTML}>
-          <img src={this.src} class="hide" onLoad={() => this.imgloaded()} />
-        </div>
-      );
-    }
+        <img class="hide" src={this.src} onLoad={() => this.imgloaded()} />
+      </div>
+    );
   }
 
 
   imgloaded() {
-    this.srcClass = "show";
     if (this.bg) {
       this.innerHTML = "<div style='background-image:url(" + this.src + "); " + this.styling + "'></div>";
     } else {
