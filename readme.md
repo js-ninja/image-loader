@@ -3,6 +3,16 @@
 Copy dist folder into your project directory
 Place <script src="dist/imageloader.js"></script> in the head of your html file.
 
+Or 
+
+run <br>
+$npm i @veerajshenoy/imageloader
+<br>then in your file include 
+```
+<script src="node_modules/@veerajshenoy/imageloader/dist/imageloader.js"></script>
+```
+
+
 <b>Lazy Loading</b>
 
 Use <lazy-load></lazy-load> to lazy load images
@@ -27,7 +37,7 @@ Example setting as img tag
 <lazy-load styling="height:250px; width:350px;" initcolor="#eee" src="https://images.unsplash.com/photo-1513834162622-bcd164ad6a88?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8ce96e06e157ef835873719b681c40ae&auto=format&fit=crop&w=1050&q=80"></lazy-load>
 
 
-<b>Progressive Loading</b>
+<b>Progressive Loading</b><br>
 Use <p-loader></p-loader> to lazy load images
 You can set your custom style using styling property on the component
 <p-loader styling="height:250px; width:350px;"></p-loader>
@@ -54,8 +64,8 @@ Feel free to use it in any of your projects.
 
 
 
-
-<b>License</b>
+<br>
+<h3>License</h3>
 Copyright 2018 Veeraj Shenoy
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
