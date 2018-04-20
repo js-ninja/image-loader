@@ -1,5 +1,5 @@
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'imageloader',
   outputTargets:[
     { 
       type: 'dist' 

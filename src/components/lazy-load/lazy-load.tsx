@@ -8,7 +8,7 @@ import { Component, Prop, State } from '@stencil/core';
 export class MyComponent {
 
   @Prop() src: string;
-  @Prop() styling: string;
+  @Prop() styling: string = "";
   @Prop() bg: boolean = false;
   @Prop() initcolor: string = 'transparent';
   @Prop() alt: string = "Lazy Image";
