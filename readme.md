@@ -81,8 +81,8 @@ Providing both properties is unnecessay, any single property will readily load t
 Feel free to use it in any of your projects.
 
 
-You can donate to this project using the button below<br>
-<button name="button" onclick="href='https://www.paypal.me/VeerajS'">Donate now</button>
+You can donate to this project using the link below<br>
+<a href='https://www.paypal.me/VeerajS'>Donate now</a>
 
 <br>
 <h3>License</h3>
