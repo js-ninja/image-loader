@@ -9,53 +9,63 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
+  interface LazyLoad {
+    'alt': string;
+    'bg': boolean;
+    'initcolor': string;
+    'src': string;
+    'styling': string;
+  }
+  interface PLoader {
+    'alt': string;
+    'bg': boolean;
+    'highres': string;
+    'initcolor': string;
+    'lowres': string;
+    'styling': string;
   }
 }
 
 declare global {
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement { }
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new(): HTMLMyComponentElement;
+  interface HTMLLazyLoadElement extends Components.LazyLoad, HTMLStencilElement {}
+  var HTMLLazyLoadElement: {
+    prototype: HTMLLazyLoadElement;
+    new (): HTMLLazyLoadElement;
+  };
+
+  interface HTMLPLoaderElement extends Components.PLoader, HTMLStencilElement {}
+  var HTMLPLoaderElement: {
+    prototype: HTMLPLoaderElement;
+    new (): HTMLPLoaderElement;
   };
   interface HTMLElementTagNameMap {
     'lazy-load': HTMLLazyLoadElement;
+    'p-loader': HTMLPLoaderElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
+  interface LazyLoad extends JSXBase.HTMLAttributes<HTMLLazyLoadElement> {
+    'alt'?: string;
+    'bg'?: boolean;
+    'initcolor'?: string;
+    'src'?: string;
+    'styling'?: string;
+  }
+  interface PLoader extends JSXBase.HTMLAttributes<HTMLPLoaderElement> {
+    'alt'?: string;
+    'bg'?: boolean;
+    'highres'?: string;
+    'initcolor'?: string;
+    'lowres'?: string;
+    'styling'?: string;
   }
 
   interface IntrinsicElements {
-    'my-component': MyComponent;
+    'lazy-load': LazyLoad;
+    'p-loader': PLoader;
   }
 }
 
@@ -64,7 +74,7 @@ export { LocalJSX as JSX };
 
 declare module "@stencil/core" {
   export namespace JSX {
-    interface IntrinsicElements extends LocalJSX.IntrinsicElements { }
+    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
   }
 }
 

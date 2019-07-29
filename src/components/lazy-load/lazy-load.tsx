@@ -1,4 +1,5 @@
 import { Component, Prop, State } from '@stencil/core';
+import { h } from '@stencil/core';
 
 @Component({
   tag: 'lazy-load',

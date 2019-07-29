@@ -1,8 +1,13 @@
 {
   "name": "@veerajshenoy/imageloader",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Image Loader Component - Lazy loading and Progressive loading.",
-  "keywords": ["stenciljs", "webcomponents", "lazy loading", "images"],
+  "keywords": [
+    "stenciljs",
+    "webcomponents",
+    "lazy loading",
+    "images"
+  ],
   "main": "dist/imageloader.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
